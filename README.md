@@ -1,4 +1,4 @@
-# Mproj
+# proj
 
 Welcome to My Blog Site! This is a platform where I share my thoughts, experiences, and insights on various topics.
 

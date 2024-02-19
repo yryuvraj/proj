@@ -1,0 +1,24 @@
+{
+  "name": "proj",
+  "version": "1.0.0",
+  "description": "Welcome to My Blog Site! This is a platform where I share my thoughts, experiences, and insights on various topics.",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yryuvraj/proj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yryuvraj/proj/issues"
+  },
+  "homepage": "https://github.com/yryuvraj/proj#readme"
+}

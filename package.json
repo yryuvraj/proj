@@ -4,7 +4,8 @@
   "description": "Welcome to My Blog Site! This is a platform where I share my thoughts, experiences, and insights on various topics.",
   "main": "index.js",
   "dependencies": {
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "xterm": "^5.3.0"
   },
   "devDependencies": {},
   "scripts": {

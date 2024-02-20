@@ -10,6 +10,8 @@ function makeDraggable(elementId) {
         const boundingRect = element.getBoundingClientRect();
         offsetX = event.clientX - boundingRect.left;
         offsetY = event.clientY - boundingRect.top;
+        console.log(`clientX ${event.clientX} left ${boundingRect.left}`);
+        console.log(`clientY ${event.clientY} left ${boundingRect.top}`);
     });
     document.addEventListener('mousemove', (event) => {
         if (isDragging) {
@@ -17,6 +19,7 @@ function makeDraggable(elementId) {
             const y = event.clientY - offsetY;
             element.style.left = x + 'px';
             element.style.top = y + 'px';
+            console.log(`x is ${x} y is ${y}`);
         }
     });
     document.addEventListener('mouseup', () => {
@@ -25,3 +28,4 @@ function makeDraggable(elementId) {
 }
 makeDraggable('wrapper');
 makeDraggable('wrapper2');
+makeDraggable('terminal');

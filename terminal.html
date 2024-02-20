@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminal-0xRathi</title>
     <style>
-        body{
+        body {
             background-image: url('./public/assets/image.png');
         }
 
-        .xyz{
+        .xyz {
             font-size: 1.5rem;
             color: white;
             text-align: center;
@@ -17,32 +17,54 @@
             margin-top: 2%;
         }
 
-        .wrapper{
+        .wrapper {
             display: flex;
             justify-content: center;
         }
 
-        .typewriter{
-            content:"";
+        .typewriter {
+            content: "";
             overflow: hidden;
-            animation:text 5s linear infinite;
+            animation: text 5s linear infinite;
             display: inline-block;
             vertical-align: bottom;
         }
 
-        @keyframes text{
-            from{
-                width:0%;
-            }to{
-                width:100%;
+        @keyframes text {
+            from {
+                width: 0%;
             }
+            to {
+                width: 100%;
+            }
+        }
+
+        hr {
+            border-top: 1px solid white;
+        }
+
+        .terminal {
+            width: 80%;
+            margin: 0 auto;
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+            max-height: 300px;
+            font-size: 175%;
+        }
+
+        .prompt {
+            color: green;
         }
     </style>
 </head>
 <body>
-   <div class="wrapper">
+<div class="wrapper">
     <pre class="xyz typewriter">
-
         /$$$$$$            /$$$$$$$              /$$     /$$       /$$
         /$$$_  $$          | $$__  $$            | $$    | $$      |__/
        | $$$$\ $$ /$$   /$$| $$  \ $$  /$$$$$$  /$$$$$$  | $$$$$$$  /$$
@@ -50,18 +72,16 @@
        | $$\ $$$$ \  $$$$/ | $$__  $$  /$$$$$$$  | $$    | $$  \ $$| $$
        | $$ \ $$$  >$$  $$ | $$  \ $$ /$$__  $$  | $$ /$$| $$  | $$| $$
        |  $$$$$$/ /$$/\  $$| $$  | $$|  $$$$$$$  |  $$$$/| $$  | $$| $$
-        \______/ |__/  \__/|__/  |__/ \_______/   \___/  |__/  |__/|__/ 
-                                     
-          </pre>
-   </div> 
-    <div class="xyz">
-        <hr>
-    </div>
-    
+        \______/ |__/  \__/|__/  |__/ \_______/   \___/  |__/  |__/|__/
+    </pre>
+</div>
+<div class="xyz">
+    <hr>
+</div>
+<div class="terminal" id="terminal">
+    <p> > Welcome to Terminal by 0xRathi</p>
+</div>
 
-    <script src="./dest/terminal.js"></script>
+<script src="/.dest/terminal.js"></script>
 </body>
-</html> 
-
-
-
+</html>

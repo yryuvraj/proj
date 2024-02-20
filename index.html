@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="dest/index.js"></script>
     <title>Documet</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        .wrapper{
+            width:450px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border:2px solid black;
+            border-radius: 10px;
+        }
+
+        .wrapper header{
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: 600;
+            padding:0.7%;
+            border-bottom: 2px solid black;
+        }
+
+        .wrapper p{
+            padding:3% 10%;
+            text-align: justify;
+            font-size: 1.5rem;
+        }
+
+        #wrapper2{
+            transform: translate(-100%,25%);
+        }
+
+    </style>
 </head>
 <body>
-    <div>proj started</div>
+    <div class="wrapper" id="wrapper">
+        <header class="header">Name</header>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, iusto. Officiis id voluptatibus vitae eligendi debitis nulla asperiores vero obcaecati maiores explicabo animi aut, neque aliquam quo doloremque accusantium facilis.</p>
+    </div>
+    <div class="wrapper" id="wrapper2">
+        <header class="header">Name</header>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, iusto. Officiis id voluptatibus vitae eligendi debitis nulla asperiores vero obcaecati maiores explicabo animi aut, neque aliquam quo doloremque accusantium facilis.</p>
+    </div>
+
+    <script src="./dest/index.js"></script>
 </body>
 </html>

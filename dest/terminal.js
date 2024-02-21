@@ -1,7 +1,16 @@
 "use strict";
-const inputElement = document.getElementById("input");
 const outputElement = document.getElementById("output");
-inputElement.addEventListener('keydown', (event) => {
+const inputfield = document.getElementById("inputfield");
+function inputfieldcontainer() {
+    inputfield.innerHTML = `
+    <label for="input">mehul@mehul:~$ </label>
+    <input type="text" id="input" autofocus>
+    `;
+    const inputElement = document.getElementById("input");
+    inputElement.focus();
+}
+inputfield.addEventListener('keydown', (event) => {
+    const inputElement = event.target;
     if (event.key === 'Enter') {
         if (inputElement.value.trim() === 'help') {
             const text = [
@@ -25,3 +34,4 @@ inputElement.addEventListener('keydown', (event) => {
         inputElement.value = '';
     }
 });
+inputfieldcontainer();

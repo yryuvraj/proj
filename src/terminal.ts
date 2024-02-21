@@ -1,7 +1,17 @@
-const inputElement = document.getElementById("input") as HTMLInputElement;
 const outputElement = document.getElementById("output") as HTMLDivElement;
+const inputfield = document.getElementById("inputfield") as HTMLDivElement;
 
-inputElement.addEventListener('keydown', (event) => {
+function inputfieldcontainer() {
+    inputfield.innerHTML = `
+    <label for="input">mehul@mehul:~$ </label>
+    <input type="text" id="input" autofocus>
+    `;
+    const inputElement = document.getElementById("input") as HTMLInputElement;
+    inputElement.focus();
+}
+
+inputfield.addEventListener('keydown', (event) => {
+    const inputElement = event.target as HTMLInputElement;
     if (event.key === 'Enter') {
         if (inputElement.value.trim() === 'help') {
             const text = [
@@ -15,9 +25,11 @@ inputElement.addEventListener('keydown', (event) => {
                     outputElement.innerHTML += text;
                 }, index * 200);
             })
+           
         }
         else if (inputElement.value.trim() === 'ls') {
-            outputElement.innerHTML = "file1.txt  file2.txt  README.md";            
+            outputElement.innerHTML = "file1.txt  file2.txt  README.md";
+           
         }
         else {
             outputElement.innerHTML = "Wrong Command : use `help` to know more";
@@ -26,3 +38,4 @@ inputElement.addEventListener('keydown', (event) => {
     }
 });
 
+inputfieldcontainer();

@@ -1,0 +1,43 @@
+body {
+    background-image: url('../../public/assets/image.png');
+}
+
+.xyz {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter {
+    content: "";
+    overflow: hidden;
+    animation: text 5s linear infinite;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+@keyframes text {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+hr {
+    border-top: 1px solid white;
+}
+
+.terminal , #output {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}

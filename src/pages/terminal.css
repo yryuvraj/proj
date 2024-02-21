@@ -18,7 +18,7 @@ body {
 .typewriter {
     content: "";
     overflow: hidden;
-    animation: text 5s linear infinite;
+    animation: text 5s linear;
     display: inline-block;
     vertical-align: bottom;
 }
@@ -40,4 +40,5 @@ hr {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
+    margin-top: 1%;
 }
